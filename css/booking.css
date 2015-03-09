@@ -1,0 +1,28 @@
+/* Base */
+.image­-resp {
+	max-width: 100%; 
+	height: auto;
+}
+
+/* Sprite Test */
+
+.l-logo {
+	width: 200px;
+	height: 100px;
+}
+
+@media and screen only (max-width: 720px) {
+	.l-logo {
+	width: 200px;
+	height: 100px;
+}
+}
+
+.logo {
+
+}
+
+.logo:hover {
+
+}
+
