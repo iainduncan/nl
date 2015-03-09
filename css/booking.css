@@ -21,6 +21,17 @@
 		background: url("/img/booking_logo_sprite@1x.png") -100px 0 no-repeat;
 }
 
+.logo-fluid-container {
+	max-width: 600px; /*constrain width to max-width of image*/
+}
+
+.logo-fluid {
+	padding-top: 50%; /* 300px/600px */
+	background-image:url("/img/booking_logo_sprite@3x.png");
+	background-size:cover;
+	background-position:center; /* IE fix */
+}
+
 @media only screen and (min-width: 45em) {
 	.l-logo {
 	width: 200px;
