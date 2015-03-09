@@ -1,26 +1,56 @@
 /* Base */
-.image­-resp {
+/*.image-resp {
 	max-width: 100%; 
 	height: auto;
-}
+}*/
 
 /* Sprite Test */
 
 .l-logo {
-	width: 200px;
+	width: 100px;
 	height: 100px;
-}
-
-@media and screen only (max-width: 720px) {
-	.l-logo {
-	width: 200px;
-	height: 100px;
-}
 }
 
 .logo {
-
+	display: block;
+	background: url("/img/booking_logo_sprite@1x.png") 0 0 no-repeat;
+	cursor: pointer;
 }
+
+.logo:hover {
+		background: url("/img/booking_logo_sprite@1x.png") -100px 0 no-repeat;
+}
+
+@media only screen and (min-width: 45em) {
+	.l-logo {
+	width: 200px;
+	height: 200px;
+	}
+	
+	.logo {
+		background: url("/img/booking_logo_sprite@2x.png") 0 0 no-repeat;
+	}
+
+	.logo:hover {
+		background: url("/img/booking_logo_sprite@2x.png") -200px 0 no-repeat;
+	}
+}
+
+@media only screen and (min-width: 65em) {
+	.l-logo {
+	width: 300px;
+	height: 300px;
+	}
+	
+	.logo {
+		background: url("/img/booking_logo_sprite@3x.png") 0 0 no-repeat;
+	}
+	.logo:hover {
+		background: url("/img/booking_logo_sprite@3x.png") -300px 0 no-repeat;
+	}
+}
+
+
 
 .logo:hover {
 
