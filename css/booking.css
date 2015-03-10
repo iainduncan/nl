@@ -1,4 +1,5 @@
 /* Base */
+
 /*.image-resp {
 	max-width: 100%; 
 	height: auto;
@@ -19,17 +20,6 @@
 
 .logo:hover {
 		background: url("/img/booking_logo_sprite@1x.png") -100px 0 no-repeat;
-}
-
-.logo-fluid-container {
-	max-width: 600px; /*constrain width to max-width of image*/
-}
-
-.logo-fluid {
-	padding-top: 50%; /* 300px/600px */
-	background-image:url("/img/booking_logo_sprite@3x.png");
-	background-size:cover;
-	background-position:center; /* IE fix */
 }
 
 @media only screen and (min-width: 45em) {
@@ -61,9 +51,28 @@
 	}
 }
 
+/* Fluid BG image responsive */
 
+.logo-fluid-container {
+	max-width: 600px; /* constrain width to max-width of image */
+}
 
-.logo:hover {
+.logo-fluid {
+	padding-top: 50%; /* 300px/600px */
+	background-image:url("/img/booking_logo_sprite@3x.png");
+	background-size:cover;
+	background-position:center; /* IE fix */
+}
+
+/* Srcset image responsive */
+
+.logo-srcset-container {
 
 }
+
+.logo-srcset {
+
+}
+
+
 
