@@ -85,5 +85,29 @@ picture img, img {
 
 }
 
+/* Flexbox test */
+.flex-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.flex1 {
+	width: 25%;
+	height: 100px;
+	background-color: red;
+}
+
+.flex2 {
+	width: 25%;
+	height: 100px;
+	background-color: green;
+}
+
+.flex3 {
+	width: 25%;
+	height: 100px;
+	background-color: yellow;
+}
+
 
 
