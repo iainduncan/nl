@@ -36,7 +36,7 @@
         <![endif]-->
 
 
-            <section class="">
+ <!--            <section class="">
                 <p>Responsive insert new image at EM breakpoint</p>
                 <div class="image-resp l-logo logo">
                 </div>
@@ -53,6 +53,20 @@
                 <p>Responsive srcset image</p>
                 <div class="logo-srcset">
                     <img src="/img/booking_logo_sprite@1x.png" srcset="/img/booking_logo_sprite@1x.png 700w, /img/booking_logo_sprite@2x.png 800w, /img/booking_logo_sprite@3x.png 900w" alt="booking logo">
+                </div>
+            </section> -->
+
+              <section class="logo-picture-container">
+                <p>Responsive picture elementimage</p>
+                <div class="logo-picture">
+                    <picture>
+                        <!--[if IE9]><video style="display:none;"><![endif]-->
+                        <source srcset="/img/booking_logo_sprite@2x.png" media="(min-width: 500px)">
+                        <source srcset="/img/booking_logo_sprite@3x.png" media="(min-width: 700px)">
+                        <!--[ifIE9]></video><![endif]-->
+                        <img src="/img/booking_logo_sprite@1x.png" srcset="/img/booking_logo_sprite@1x.png" alt="booking logo">
+                        
+                    </picture>
                 </div>
             </section>
 

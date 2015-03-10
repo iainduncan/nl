@@ -1,9 +1,10 @@
 /* Base */
 
-/*.image-resp {
+picture img, img {
 	max-width: 100%; 
 	height: auto;
-}*/
+}
+
 
 /* Sprite Test */
 
@@ -71,6 +72,16 @@
 }
 
 .logo-srcset {
+
+}
+
+/* picture element image responsive */
+
+.logo-picture-container {
+
+}
+
+.logo-picture {
 
 }
 
