@@ -5,6 +5,10 @@ picture img, img {
 	height: auto;
 }
 
+.clearfix {
+	overflow: hidden;
+	width: 100%;
+}
 
 /* Sprite Test */
 
@@ -108,6 +112,22 @@ picture img, img {
 	height: 100px;
 	background-color: yellow;
 }
+
+/* Old school grid test */
+
+.grid-contain {
+	background-color: green;
+}
+
+.fl {
+	float: left;
+	background-color: red;
+	border-right: 1px dashed black;
+	width: 25%;
+	margin-right: 10px;
+}
+
+
 
 
 
