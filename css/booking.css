@@ -5,9 +5,23 @@ picture img, img {
 	height: auto;
 }
 
-.clearfix {
+.clearfix-modern {
 	overflow: hidden;
-	width: 100%;
+	/*width: any explicit value;*/
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+ 
+.clearfix:after {
+  clear: both;
+}
+ 
+.clearfix {
+  zoom: 1; /* ie 6/7 */
 }
 
 /* Sprite Test */
@@ -115,17 +129,84 @@ picture img, img {
 
 /* Old school grid test */
 
-.grid-contain {
+.row {
 	background-color: green;
+	margin-bottom: 1.5em;
 }
 
-.fl {
-	float: left;
+.col{
+	
 	background-color: red;
-	border-right: 1px dashed black;
-	width: 25%;
-	margin-right: 10px;
+	margin-bottom: 10px;
+
 }
+
+@media only screen and (min-width: 45em) {
+	.col {
+		float: left;
+		border-right: 1px dashed black;
+		width: 25%;
+		margin-right: 10px;
+		margin-bottom: 0.5em;
+	}
+
+}
+
+@media only screen and (min-width: 65em) {
+	.row:first-child {
+		padding-left: 1em;
+	}
+
+}
+
+.gallery-contain {
+      background-color: blue;
+      padding: 0;
+}
+
+@media only screen and (min-width: 45em) {
+  .gallery-contain {
+    background-color: blue;
+    padding-left: 4%;
+    width: 100%;
+  }
+}
+
+.gallery-group {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.gallery-entry {
+  color: white;
+  display: block;
+  list-style: none;
+  margin-bottom: 4%;
+  height: 200px;
+  background: url(/img/paris.jpg);
+  background-size: cover;
+}
+
+@media only screen and (min-width: 45em) {
+  .gallery-entry {
+    float: left;
+    width: 20%;
+    margin-right: 4%;
+    height: 200px;
+
+  }
+  .gallery-entry:first-child {
+    color: red;
+
+  }
+}
+
+.gallery-entry--bg {
+  background-color: red;
+}
+
+
 
 
 
